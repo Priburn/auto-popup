@@ -1,0 +1,117 @@
+<img src="https://i.ibb.co/4sf03NX/close.png" alt="close" border="0">
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    min-height:100vh;
+    background-color: brown;
+}
+
+.popup{
+    position: fixed;
+    margin-top: 25%;
+    left:50%;
+    transform : translate(-50%,-50%);
+    display: none;
+}
+
+.contentBox{
+    position:relative;
+    width:600px;
+    height:400px;
+    background:white;
+    border-radius:20px;
+    display:flex;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.contentBox .imgBox{
+    position: relative;
+    width:300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contentBox .imgBox::before{
+    content: '';
+    position: absolute;
+    width:250px;
+    height:250px;
+    background: beige;
+    border-radius:50%;
+}
+
+.contentBox .imgBox img{
+    position:relative;
+    max-width: 250px;
+    z-index: 1;
+}
+
+.contentBox .content{
+    position: relative;
+    width:300px;
+    height:400px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.contentBox .content h3{
+    color:#333;
+    line-height:1em;
+    font-weight:300;
+    font-size: 2em;
+}
+.contentBox .content h2{
+    font-size:4em;
+    color:rgb(163, 19, 19);
+    line-height:1em;
+}
+.contentBox .content h2 span{
+    color:#333;
+    font-size:0.75em;
+    text-transform:uppercase;
+   
+}
+
+.contentBox .content p{
+    font-weight: 300;
+    
+}
+
+.contentBox .content a{ 
+    display:inline-block;
+    padding:10px 20px;
+    background: rgb(163, 19, 19);
+    color:#fff;
+    margin-top: 15px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.close{
+    position:absolute;
+    top:20px;
+    right:20px;
+    width:40px;
+    height:40px;
+    background: #f3f3f3 ;
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-position: center;
+    cursor:pointer;
+    border-radius: 50%;
+    z-index: 10;
+
+}
+.close img{
+    position: relative;
+    height:20px;
+    width:20px;
+    margin-top:10px;
+    margin-left: 10px;
+}
+
+
+
